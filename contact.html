@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/contact.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/9664c8b16b.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />  
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand">
+      <a class="navbar-brand" href="/main.html">
+        <img id="logo" src="/images/logo.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/main.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="/profile.html"
+          
+            >
+              Profile
+            </a>
+          </li>
+          <li class="nav-item dropdown" style="margin-left :740px;">
+            <a class="nav-link" href="/index.html" > LogIn/LogOut </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+
+    <div class="contact">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="container" style="background-color: #474E68 ;">
+      <form>
+        <label  style="color: white ; font-size:20px;padding: 10px; " for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label style="color: white ; font-size:20px;padding: 10px;" for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label style="color: white ; font-size:20px;padding: 10px;" for="country">Country</label>
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Europe">Europe</option>
+        </select>
+
+        <label style="color: white ; font-size:20px; padding: 10px;" for="subject">Your Question</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <br />
+    <footer class="site-footer">
+        <div class="container" style="background-color:#26272b;">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">
+                BookWorm.com <i>LEARN YOUR BOOK </i> is an initiative to help the
+                upcoming readers with the search funtion. BookWorm focuses on
+                providing the most efficient way of searching most used words ,
+                least used words as well as document stats.
+              </p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links" style="background-color:#26272b;">
+                <li>
+                  <a href="#">HORROR</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >ADVENTURE</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >ROMANTIC</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    >SCI-FI</a
+                  >
+                </li>
+                <li>
+                  <a href="#">BIOGRAPHY</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="/aboutus.html">About Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li>
+                  <a href="#"
+                    >Contribute</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="container" style="background-color:#26272b;">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+                Copyright &copy; 2022 All Rights Reserved by
+                <a href="#">BookWorm</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li>
+                  <a
+                    class="facebook"
+                    target="_blank"
+                    href="https://www.facebook.com/"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="twitter" target="_blank" href="https://twitter.com/"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dribbble" target="_blank" href="https://dribbble.com/"
+                    ><i class="fa fa-dribbble"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="linkedin"
+                    target="_blank"
+                    href="https://www.linkedin.com"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
