@@ -1,9 +1,9 @@
-//Load a book from disk
+ //Load a book from disk
 function loadBook(filename, displayName) {
     let currentBook = "";
     let url = "books/" + filename;
 
-    //reset our UI
+    //reset  UI
     document.getElementById("fileName").innerHTML = displayName;
     document.getElementById("searchstat").innerHTML = "";
     document.getElementById("keyword").value = "";
@@ -23,9 +23,9 @@ function loadBook(filename, displayName) {
             currentBook = currentBook.replace(/(?:\r\n|\r|\n)/g, '<br>');
 
             document.getElementById("fileContent").innerHTML = currentBook;
-
-            var elmnt = document.getElementById("fileContent");
-            elmnt.scrollTop = 0;
+            //scroll back to the top 
+                    var elmnt = document.getElementById("fileContent");
+                elmnt.scrollTop = 0;
 
         }
     };
@@ -66,7 +66,7 @@ function getDocStats(fileContent) {
     //return the least 5 words
     var least5Words = wordList.slice(-6, wordList.length);
 
-    //Write the values to the page
+    //Write the values to the page 
     ULTemplate(top5Words, document.getElementById("mostUsed"));
     ULTemplate(least5Words, document.getElementById("leastUsed"));
 
@@ -89,7 +89,8 @@ function ULTemplate(items, element) {
 }
 
 function sortProperties(obj) {
-    //first convert the object to an array
+    //converting the object to an array
+    //for each entry we have an array
     let rtnArray = Object.entries(obj);
 
     //Sort the array
