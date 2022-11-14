@@ -23,11 +23,11 @@
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <button onclick="go()"><a href="/main.html">Sign Up</a></button>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="#" name="myform">
           <h1>Sign in</h1>
           <div class="social-container">
             <a
@@ -40,10 +40,10 @@
             <a href="https://www.linkedin.com" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your account</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input name="email"  type="email" placeholder="Email" />
+          <input name="password" type="password" placeholder="Password" />
           <a href="#">Forgot your password?</a>
-          <button><a href="./main.html">Sign In</a></button>
+          <button style="cursor:pointer" id="btnS" onclick="go()"><a href="/main.html">Sign In</a></button>
         </form>
       </div>
       <div class="overlay-container">
