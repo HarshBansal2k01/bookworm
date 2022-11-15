@@ -12,7 +12,7 @@
  
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="#" name="myform1">
           <h1>Create Account</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -20,10 +20,10 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your email for registration</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button onclick="go()"><a href="/main.html">Sign Up</a></button>
+          <input required name="name" type="text" placeholder="Name" />
+          <input required name="email" type="email" placeholder="Email" />
+          <input required name="password" type="password" placeholder="Password" />
+          <button style="cursor: pointer;" onclick="go1()" > <a id="btn1">Sign Up</a></button>
         </form>
       </div>
       <div class="form-container sign-in-container">
@@ -40,10 +40,11 @@
             <a href="https://www.linkedin.com" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your account</span>
-          <input name="email"  type="email" placeholder="Email" />
-          <input name="password" type="password" placeholder="Password" />
+          <input required name="email"  type="email" placeholder="Email" />
+          <input required name="password" type="password" placeholder="Password" />
           <a href="#">Forgot your password?</a>
-          <button style="cursor:pointer" id="btnS" onclick="go()"><a href="/main.html">Sign In</a></button>
+          <!-- <input  type="submit" onsubmit="go()" value="Sign In"/> -->
+          <button style="cursor:pointer" onclick="go()" ><a id="btnS">Sign In</a></button>
         </form>
       </div>
       <div class="overlay-container">

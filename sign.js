@@ -17,6 +17,22 @@ function go() {
   if (email == "" || password == "") {
     alert("Enter Email and Password");
     return false;
+  } else {
+    document.getElementById("btnS").setAttribute("href", "/main.html");
+  }
+}
+
+function go1() {
+  var name = document.myform1.name.value;
+  var email = document.myform1.email.value;
+  var password = document.myform1.password.value;
+
+  if (email == "" || password == "" || name == " ") {
+    alert("Enter Name, Email and Password");
+    return false;
+  }
+  else{
+    document.getElementById("btn1").setAttribute("href", "/main.html");
   }
 
 }
