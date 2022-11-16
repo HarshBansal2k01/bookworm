@@ -138,9 +138,6 @@ function performMark() {
     //find all the currently marked items
     let spans = document.querySelectorAll('mark');
 
-    //<mark>Harry</mark>
-    //Harry
-
     for (var i = 0; i < spans.length; i++) {
         spans[i].outerHTML = spans[i].innerHTML;
     }
@@ -149,7 +146,7 @@ function performMark() {
     var replaceText = "<mark id='markme'>$&</mark>";
     var bookContent = display.innerHTML;
 
-    //add the mark to the book content
+    //adding the mark to the book content
     newContent = bookContent.replace(re, replaceText);
 
     display.innerHTML = newContent;
